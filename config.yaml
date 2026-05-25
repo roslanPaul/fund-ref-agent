@@ -1,0 +1,13 @@
+extraction:
+  max_retries: 3
+  chunk_overlap: 200
+
+scoring:
+  phase: "llm_native"
+  threshold_high: 0.90
+  threshold_medium: 0.70
+
+dedup:
+  tfidf_weight: 0.6
+  jaro_winkler_weight: 0.4
+  similarity_threshold: 0.85
